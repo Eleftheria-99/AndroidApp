@@ -1,0 +1,103 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dit.hua.ergasia.a2ndproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:5:5-77
+11-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:5:22-74
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:8:5-79
+13-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:8:22-76
+14
+15    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+16    <uses-feature android:name="android.hardware.location.gps" />
+16-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:11:5-66
+16-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:11:19-63
+17
+18    <application
+18-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:12:5-39:19
+19        android:allowBackup="true"
+19-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:13:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.0.1] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:14:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:15:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:16:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:17:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:18:9-40
+28        <activity android:name="com.example.dit.hua.ergasia.a2ndproject.MainActivity2ndProject" >
+28-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:19:9-25:20
+28-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:19:19-57
+29            <intent-filter>
+29-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:20:13-24:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:21:17-69
+30-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:21:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:23:17-77
+32-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:23:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <receiver android:name="com.example.dit.hua.ergasia.a2ndproject.MyBroadcastReceiver" >
+36-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:26:9-31:20
+36-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:26:19-54
+37            <intent-filter>
+37-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:27:13-30:29
+38                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+38-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:28:20-84
+38-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:28:28-81
+39                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+39-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:29:17-80
+39-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:29:25-77
+40            </intent-filter>
+41        </receiver>
+42
+43        <service android:name="com.example.dit.hua.ergasia.a2ndproject.Service2ndProject" >
+43-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:32:10-33:20
+43-->C:\Users\eleft\AndroidStudioProjects\2ndProject\app\src\main\AndroidManifest.xml:32:19-52
+44        </service>
+45        <!--
+46        <provider
+47            android:authorities="com.example.dit.hua.ergasia.a2ndproject"
+48            android:name=".ContentProvider2ndProject"
+49            android:exported="true">
+50        </provider>
+51        -->
+52        <activity
+52-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+53            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+53-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+54            android:exported="false"
+54-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+55-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+56
+57        <meta-data
+57-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\02650cd051892807041d2e43a7dde355\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+58            android:name="com.google.android.gms.version"
+58-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\02650cd051892807041d2e43a7dde355\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+59            android:value="@integer/google_play_services_version" />
+59-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\eleft\.gradle\caches\transforms-2\files-2.1\02650cd051892807041d2e43a7dde355\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+60    </application>
+61
+62</manifest>
